@@ -11,6 +11,7 @@ export default function BookCard({ book }: { book: Book }) {
       </Link>
       <p className="muted">{book.author}</p>
       <p className="tag">{book.category}</p>
+      <p className="price">{book.price.toLocaleString()}₮</p>
     </article>
   );
 }
